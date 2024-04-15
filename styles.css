@@ -1,19 +1,93 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-}
+
 body{
     background-color: black;
-    display: flex;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
-.card{
-    width: 20rem;
-    height: 30rem;
-    background-image: linear-gradient(135deg,rgb(0, 251, 180)80%,rgb(255, 33, 255));
+
+.weather-card{
+    width: 28rem;
+    height: 80%;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.search-area{
+    display:flex;
+    justify-content: space-between;
+}
+
+.search-box{
+    padding: 0.75rem 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    width: 85%;
+    font-size: 1rem;
+}
+
+.search-btn{
+    border-radius: 100%;
+    outline: 0;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    cursor:pointer;
+}
+
+.search-btn-image{
+    width: 1rem;
+}
+
+
+.sunny{
+    width: 11rem;
+    margin-top: 1rem;
+}
+
+
+.temp{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.city{
+    font-size: 2.5rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.col{
+    display:flex;
+}
+
+.col img{
+    width: 5rem;
+    padding: 1.2rem;
+}
+
+.percent{
+    text-align: left;
+}
+
+.percent-num{
+    font-size: 2rem;
 }
